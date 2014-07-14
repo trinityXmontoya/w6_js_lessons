@@ -1,0 +1,80 @@
+-# Geometry 2 - Electric Boogaloo
+ -
+ -## Background
+ -
+ -[Watch This](https://www.youtube.com/watch?v=57rxhQXwRfg)
+ -
+ -The clue to inheritance in JS is hidden in this trailer.
+ -
+ -
+ -Now that we have learned the secrets, we're going to use inheritance to define 4 classes:
+ -
+ -* Shape
+ -* Rectangle
+ -* Triangle
+ -* Square
+ -
+ -## Shape 'class'
+ -
+ -First, define the parent class 'Shape'.
+ -
+ -Properties:
+ -
+ -* x           
+ -  * x coordinate of shape
+ -* y
+ -  * y coordinate of shape
+ -* color
+ -  * color of shape, a string
+ -
+ -Methods:
+ -
+ -* move(x,y)
+ - * a method which moves the shape to the specified coordinates
+ -
+ -## Subclass Shape
+ -
+ -Next, define two classes which 'inherit' from shape:
+ -
+ -### Rectangle
+ -
+ -Properties:
+ -
+ -* length
+ -* width
+ -
+ -Methods:
+ -
+ -* area
+ -  * Calculates the area of the rectangle
+ -* perimeter
+ -  * Calculates the perimeter of the rectangle
+ -
+ -Create some rectangles with different lengths and widths to test out your functions.
+ -
+ -**Make sure** that your Rectangle objects inherit properties and methods from **Shape**.
+ -
+ -### Triangle
+ -
+ -Properties:
+ -
+ -* sideA
+ -* sideB
+ -* sideC
+ -
+ -Methods:
+ -
+ -* isEquilateral
+ - * [Returns whether the triangle is equilateral or not](http://en.wikipedia.org/wiki/Equilateral_triangle)
+ -* isIsosceles
+ - * [Returns whether the triangle is isosceles or not](http://en.wikipedia.org/wiki/Isosceles_triangle#By_relative_lengths_of_sides)
+ -
+ -**Create a few triangles with different side lengths to test out your functions.**
+ -
+ -### Square (Subclass Rectangle)
+ -
+ -Finally, create a class Square which inherits from Rectangle.
+ -
+ -The constructor should just take one property related to length and width, since they are the same for any given square.
+ -
+ -## Bonus - Refactor Constructors to use an *options* hash as their parameter.
